@@ -9,6 +9,7 @@ export const MainLayout = styled.div `
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-color: #f9f9f9;
   padding: 0 24px;
@@ -50,7 +51,8 @@ export const Card = styled.div`
   background-color: #fff;
   border-radius: 10px;
   padding: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0;
+
 `;
 
 export const CardTitle = styled.div`
@@ -71,10 +73,18 @@ export const Percentage = styled.div`
   color: #5a51ff;
 `;
 
+
+
+export const EmojiContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+`;
+
+
 export const Emoji = styled.img`
-  position: absolute;
-  right: 50px;
-  top:150px;
+
 `;
 
 export const Message = styled.div`

@@ -22,8 +22,11 @@ const Main = () => {
         <s.Card>
           <s.CardTitle>2024 7월 17일 수요일</s.CardTitle>
           <s.CardText>{registerName}님의 스트레스 지수</s.CardText>
+          <s.EmojiContainer>
+
           <s.Percentage>12%</s.Percentage>
           <s.Emoji src={happy}/>
+          </s.EmojiContainer>
         </s.Card>
         <s.Message>노후 건강, 잊지말고 챙겨야죠! 😊</s.Message>
         <s.Card>
