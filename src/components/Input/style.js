@@ -5,15 +5,22 @@ export const StyledInput = styled.input`
   max-width: 375px;
   margin: 8px 0;
   border: none;
-  font-size: 16px;
   box-sizing: border-box;
-padding: 15px 16px;
-height: 48px;
-background: #F9F9F9;
-border-radius: 10px;
-font-size: 15px;
-font-weight: 500;
-color: #1A1E27;
-::placeholder {
-    color: #C4C4C4;
+  padding: 15px 16px;
+  height: 48px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1A1E27;
+
+  ::placeholder {
+    color: #BCBCBC;
+  }
+
+  &:focus {
+    border: 1.5px solid #5A51FF;
+    outline: none;
+  }
+
 `;
