@@ -4,22 +4,24 @@ import LogoImage from "../../assets/Logo";
 export const MainLayout = styled.div`
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Container = styled.div`
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   background-color: #f9f9f9;
-  padding: 0 24px;
+  padding: 0 24px ;
 `;
 
 export const Header = styled.header`
   display: flex;
   flex-direction: row;
   padding: 16px 0px;
-  align-items: left;
+  align-items: center;
   width: 100%;
 `;
 
@@ -52,6 +54,7 @@ export const Card = styled.div`
   background-color: #fff;
   border-radius: 10px;
   padding: 16px;
+  margin-bottom: 16px; 
 `;
 
 export const CardHeader = styled.div`
@@ -97,7 +100,7 @@ export const Arrow = styled.img`
 export const Message = styled.div`
   font-size: 16px;
   font-weight: 600;
-  margin:10px 0;
+  margin: 20px 0 0px 0;
 `;
 
 export const ImageCard = styled.div`

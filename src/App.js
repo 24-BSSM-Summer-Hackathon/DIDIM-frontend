@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Serial from './pages/Serial';
 import Main from './pages/Main'
 import MyPage from './pages/MyPage';
+import Footprint from './pages/Footprint';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function AnimatedRoutes() {
           <Route path="/Serial" element={<Serial />} />
           <Route path="/main" element={<Main />} />
           <Route path="/mypage" element={<MyPage/>} />
+          <Route path="/footprint" element={<Footprint/>} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
