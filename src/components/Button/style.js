@@ -3,10 +3,8 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
   width: 100%;
   max-width: 375px;
-  background-color: #5a51ff;
   color: white;
   border: none;
-  border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
