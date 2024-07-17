@@ -5,6 +5,8 @@ import Button from '../../components/Button';
 const Serial = () => {
   const serialInputs = Array(5).fill("");
 
+  
+
   return (
     <s.SerialContainer>
       <s.TextContainer>

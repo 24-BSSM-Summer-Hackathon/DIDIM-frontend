@@ -4,6 +4,7 @@ import Logo from '../../assets/Logo';
 export const LoginLayout = styled.div`
   width: 100vw;
   height: 100vh;
+  font-family: 'pretendard';
 `;
 
 export const LoginContainer = styled.div`

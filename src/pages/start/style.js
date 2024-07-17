@@ -11,6 +11,7 @@ export const StartBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'pretendard';
 `;
 
 export const StrartLayout = styled.div`
@@ -63,7 +64,6 @@ export const LoginButton = styled.button`
 `;
 
 export const ButtonInfo = styled.div`
-  font-family: 'Pretendard';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

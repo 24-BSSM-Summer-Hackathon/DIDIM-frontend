@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   padding: 11px 24px;
   height: 40px;
   background-color:transparent;
+  font-family: 'pretendard';
 `;
 
 export const BackButton = styled.button`

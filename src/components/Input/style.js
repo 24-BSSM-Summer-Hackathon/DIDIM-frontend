@@ -17,6 +17,8 @@ export const StyledInput = styled.input`
   align-items: center;
   justify-content: center;
 
+  font-family: 'pretendard';
+
   ::placeholder {
     color: #BCBCBC;
   }

@@ -15,4 +15,5 @@ export const StyledButton = styled.button`
   height: 48px;
   background: #5a51ff;
   border-radius: 10px;
+  font-family: 'pretendard';
 `;

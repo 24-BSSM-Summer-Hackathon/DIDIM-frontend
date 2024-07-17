@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import LogoImage from '../../assets/Logo'; // 로고 이미지 경로를 확인하세요
-
+import LogoImage from '../../assets/Logo';
 
 export const SerialLayout = styled.div ` 
+font-family: 'pretendard';
 height: 100vh;
 width: 100vw;
 `
+
 export const SerialContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   background-color: #F9F9F9;
   padding: 20px;
