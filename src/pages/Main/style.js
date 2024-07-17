@@ -1,47 +1,63 @@
-import styled from 'styled-components';
-import LogoImage from '../../components/Footer';
+import styled from "styled-components";
+import LogoImage from "../../assets/Logo";
+
+export const MainLayout = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: #F9F9F9;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 0 24px;
 `;
 
 export const Header = styled.header`
   display: flex;
-  align-items: center;
-  padding: 16px;
-  background-color: #FFF;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  padding: 16px 0px;
+  align-items: left;
+  width: 100%;
 `;
 
 export const Logo = styled(LogoImage)`
-  width: 40px;
-  height: 40px;
-  margin-right: 16px;
+  width: 25.06px;
+  height: 23.53px;
+  margin-right: 5px;
 `;
 
-export const UserInfo = styled.div`
-  flex-grow: 1;
+export const LogoText = styled.div`
+  color: #5a51ff;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 2px;
 `;
 
 export const Greeting = styled.div`
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 10px;
 `;
 
 export const Content = styled.main`
   flex: 1;
   padding: 16px;
+  width: 100%;
 `;
 
 export const Card = styled.div`
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 10px;
   padding: 16px;
-  margin-bottom: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+`;
+
+export const CardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const CardTitle = styled.div`
@@ -59,15 +75,38 @@ export const CardText = styled.div`
 export const Percentage = styled.div`
   font-size: 32px;
   font-weight: 700;
-  color: #5A51FF;
+  color: #5a51ff;
 `;
 
-export const Emoji = styled.div`
-  font-size: 32px;
+export const EmojiContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+`;
+
+export const Emoji = styled.img`
+
+`;
+
+export const Arrow = styled.img`
+  width: 8px;
+  height: 14px;
 `;
 
 export const Message = styled.div`
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin:10px 0;
+`;
+
+export const ImageCard = styled.div`
+  margin: 16px 0;
+  width: 100%;
+  cursor: pointer;
+`;
+
+export const CardImage = styled.img`
+  width: 100%;
+  border-radius: 10px;
 `;
