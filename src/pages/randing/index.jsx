@@ -2,12 +2,12 @@ import React from 'react';
 import Logo from '../../assets/Logo';
 import './style.css';
 
-const Index = () => {
+const Rading = () => {
   return (
     <div className="container">
-      <Logo/>
+      <Logo className="logo"/>
     </div>
   );
 };
 
-export default Index;
+export default Rading;

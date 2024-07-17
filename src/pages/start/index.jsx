@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import * as s from "./style";
 
-const index = () => {
+const Start = () => {
   return (
-    <div>
-      
-    </div>
+    <s.StartBackground>
+      <s.StrartLayout>
+        <s.StyledLogo />
+      </s.StrartLayout>
+    </s.StartBackground>
   );
 };
 
-export default index;
+export default Start;
