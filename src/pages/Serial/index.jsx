@@ -9,7 +9,7 @@ const Serial = () => {
     <s.SerialContainer>
       <s.TextContainer>
       <s.Logo />
-        <s.MainText>링에 적힌 시리얼코드를 입력하세요!</s.MainText>
+        <s.MainText>링에 적힌 시리얼코드를<br/>입력하세요!</s.MainText>
       </s.TextContainer>
       <s.InputContainer>
         {serialInputs.map((_, index) => (

@@ -25,11 +25,13 @@ export const Logo = styled(LogoImage)`
 export const TextContainer = styled.div`
   margin-bottom: 20px;
   text-align: left;
+  width: 100%;
+  max-width: 375px;
 `;
 
 export const MainText = styled.div`
   color: #1C1C1E;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 `;
 
