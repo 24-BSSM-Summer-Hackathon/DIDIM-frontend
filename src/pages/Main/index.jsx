@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import * as s from './style';
 
+
 const Main = () => {
   return (
     <s.Container>
@@ -11,7 +12,7 @@ const Main = () => {
         </s.UserInfo>
       </s.Header>
       <s.Content>
-          <s.Greeting>👋 강민지님</s.Greeting>
+          <s.Greeting>👋🏻 강민지님</s.Greeting>
         <s.Card>
           <s.CardTitle>2024 7월 17일 수요일</s.CardTitle>
           <s.CardText>강시우님의 스트레스 지수</s.CardText>
