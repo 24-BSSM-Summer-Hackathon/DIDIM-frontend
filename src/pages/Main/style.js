@@ -82,6 +82,17 @@ export const EmojiContainer = styled.div`
   align-items: end;
 `;
 
+export const Arrow = styled.img`
+width: 8px;
+height: 14px;
+
+`;
+
+export const CardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 export const Emoji = styled.img`
 
