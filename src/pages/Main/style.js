@@ -18,8 +18,8 @@ export const Container = styled.div`
 export const Header = styled.header`
   display: flex;
   flex-direction: row;
-  padding: 16px;
-  align-items: center;
+  padding: 16px 0px;
+  align-items: left;
   width: 100%;
 `;
 
@@ -39,6 +39,7 @@ export const LogoText = styled.div`
 export const Greeting = styled.div`
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 10px;
 `;
 
 export const Content = styled.main`
@@ -51,8 +52,6 @@ export const Card = styled.div`
   background-color: #fff;
   border-radius: 10px;
   padding: 16px;
-  margin: 16px 0;
-  width: 100%;
 `;
 
 export const CardHeader = styled.div`
@@ -98,7 +97,7 @@ export const Arrow = styled.img`
 export const Message = styled.div`
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin:10px 0;
 `;
 
 export const ImageCard = styled.div`
