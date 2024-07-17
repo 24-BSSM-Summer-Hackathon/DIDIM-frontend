@@ -6,6 +6,7 @@ import Start from './pages/start/index';
 import './App.css';
 import Login from './pages/Login';
 import Serial from './pages/Serial';
+import Main from './pages/Main'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function AnimatedRoutes() {
           <Route path="/start" element={<Start />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Serial" element={<Serial />} />
+          <Route path="/main" element={<Main />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
