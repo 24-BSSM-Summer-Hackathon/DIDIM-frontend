@@ -7,6 +7,7 @@ import './App.css';
 import Login from './pages/Login';
 import Serial from './pages/Serial';
 import Main from './pages/Main'
+import MyPage from './pages/MyPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function AnimatedRoutes() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Serial" element={<Serial />} />
           <Route path="/main" element={<Main />} />
+          <Route path="/mypage" element={<MyPage/>} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
