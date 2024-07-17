@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Randing from './pages/randing/index';
 import Start from './pages/start/index';
 import './App.css';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -15,13 +16,13 @@ function App() {
 
 function AnimatedRoutes() {
   const location = useLocation();
-
   return (
     <TransitionGroup>
       <CSSTransition key={location.key} classNames="fade" timeout={300}>
         <Routes location={location}>
           <Route path="/" element={<Randing />} />
           <Route path="/start" element={<Start />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
