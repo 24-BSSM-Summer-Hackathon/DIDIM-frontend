@@ -1,8 +1,8 @@
 import React from 'react';
 import * as s from './style';
 
-const Button = ({ children, ...props }) => {
-  return <s.StyledButton {...props}>{children}</s.StyledButton>;
+const Button = ({ text, ...props }) => {
+  return <s.StyledButton {...props}>{text}</s.StyledButton>;
 };
 
 export default Button;

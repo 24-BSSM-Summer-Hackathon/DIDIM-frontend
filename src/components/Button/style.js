@@ -1,15 +1,20 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledButton = styled.button`
   width: 100%;
   max-width: 375px;
-  padding: 12px 0;
-  margin: 16px 0;
-  background-color: #5A51FF;
+  background-color: #5a51ff;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 135px;
+  height: 48px;
+  background: #5a51ff;
+  border-radius: 10px;
 `;
