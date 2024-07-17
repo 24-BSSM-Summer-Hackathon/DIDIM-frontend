@@ -19,4 +19,5 @@ export const BackButton = styled.button`
 export const Title = styled.div`
   font-size: 17px;
   font-weight: 600;
+  color: #1A1E27;
 `;
