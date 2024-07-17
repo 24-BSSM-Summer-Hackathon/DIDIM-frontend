@@ -1,11 +1,14 @@
-
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Randing from './pages/randing/index';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Randing />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
