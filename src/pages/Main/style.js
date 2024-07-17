@@ -9,16 +9,16 @@ export const MainLayout = styled.div `
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100vh;
   background-color: #f9f9f9;
   padding: 0 24px;
 `;
 
 export const Header = styled.header`
-  display: flex;
-  align-items: center;
+  display: flex; 
+  flex-direction: row;
   padding: 16px;
+
 `;
 
 export const Logo = styled(LogoImage)`
@@ -27,15 +27,14 @@ export const Logo = styled(LogoImage)`
   margin-right: 5px;
 `;
 
-export const LogoText = styled.p`
+export const LogoText = styled.div`
   color: #5a51ff;
   font-size: 17px;
   font-weight: 600;
+  margin-top: 2px;
 `;
 
-export const UserInfo = styled.div`
-  flex-grow: 1;
-`;
+
 
 export const Greeting = styled.div`
   font-size: 18px;
@@ -52,7 +51,6 @@ export const Card = styled.div`
   border-radius: 10px;
   padding: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 `;
 
 export const CardTitle = styled.div`
@@ -74,7 +72,9 @@ export const Percentage = styled.div`
 `;
 
 export const Emoji = styled.img`
-  
+  position: absolute;
+  right: 50px;
+  top:150px;
 `;
 
 export const Message = styled.div`

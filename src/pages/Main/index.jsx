@@ -10,13 +10,13 @@ const Main = () => {
   const userName = "강민지"
   const registerName = "강시우"
   return (
+    <s.MainLayout>
+
     <s.Container>
       <s.Header>
                 <s.Logo />
                 <s.LogoText>DIDIM</s.LogoText>
             </s.Header>
-        <s.UserInfo>
-        </s.UserInfo>
       <s.Content>
           <s.Greeting>👋🏻 {userName}님</s.Greeting>
         <s.Card>
@@ -41,6 +41,7 @@ const Main = () => {
       </s.Content>
       <Footer />
     </s.Container>
+    </s.MainLayout>
   );
 };
 
