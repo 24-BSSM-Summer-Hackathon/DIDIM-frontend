@@ -1,14 +1,22 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import * as s from './style';
-import happy from '../../assets/state/good.png'
-import soso from '../../assets/state/soso.png'
-import bad from '../../assets/state/bad.png'
-import arrow from '../../assets/arrow.svg'
+import happy from '../../assets/state/good.png';
+import soso from '../../assets/state/soso.png';
+import bad from '../../assets/state/bad.png';
+import arrow from '../../assets/arrow.svg';
+import frame1 from '../../assets/Frame 7293.png';
+import frame2 from '../../assets/Frame 7294.png';
+import frame3 from '../../assets/Frame 7296.png';
 
 const Main = () => {
-  const userName = "강민지"
-  const registerName = "강시우"
+  const userName = "강민지";
+  const registerName = "강시우";
+  
+  const handleCardClick = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <s.MainLayout>
       <s.Container>
@@ -32,27 +40,15 @@ const Main = () => {
             </s.EmojiContainer>
           </s.Card>
           <s.Message>노후 건강, 잊지말고 챙겨야죠! 😊</s.Message>
-          <s.Card>
-            <s.CardHeader>
-              <s.CardTitle>자신의 건강이 의심된다면?</s.CardTitle>
-
-            </s.CardHeader>
-            <s.CardText>치매 자가 진단으로 간단하게 확인해보세요!</s.CardText>
-          </s.Card>
-          <s.Card>
-            <s.CardHeader>
-              <s.CardTitle>홀로 일상생활을 하기 어려운 취약노인을 위한</s.CardTitle>
-
-            </s.CardHeader>
-            <s.CardText>노인맞춤돌봄서비스</s.CardText>
-          </s.Card>
-          <s.Card>
-            <s.CardHeader>
-              <s.CardTitle>몰라서 안 받으면 손해잖아요!</s.CardTitle>
-
-            </s.CardHeader>
-            <s.CardText>만 65세 이상 어르신 목욕 및 이·미용비 지원</s.CardText>
-          </s.Card>
+          <s.ImageCard onClick={() => handleCardClick('https://example.com/1')}>
+            <s.CardImage src={frame1} />
+          </s.ImageCard>
+          <s.ImageCard onClick={() => handleCardClick('https://example.com/2')}>
+            <s.CardImage src={frame2} />
+          </s.ImageCard>
+          <s.ImageCard onClick={() => handleCardClick('https://example.com/3')}>
+            <s.CardImage src={frame3} />
+          </s.ImageCard>
         </s.Content>
         <Footer />
       </s.Container>

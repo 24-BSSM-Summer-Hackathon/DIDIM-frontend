@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import LogoImage from "../../assets/Logo";
 
-export const MainLayout = styled.div `
+export const MainLayout = styled.div`
   width: 100vw;
   height: 100vh;
-`
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -16,10 +16,11 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.header`
-  display: flex; 
+  display: flex;
   flex-direction: row;
   padding: 16px;
-
+  align-items: center;
+  width: 100%;
 `;
 
 export const Logo = styled(LogoImage)`
@@ -35,8 +36,6 @@ export const LogoText = styled.div`
   margin-top: 2px;
 `;
 
-
-
 export const Greeting = styled.div`
   font-size: 18px;
   font-weight: 600;
@@ -45,6 +44,7 @@ export const Greeting = styled.div`
 export const Content = styled.main`
   flex: 1;
   padding: 16px;
+  width: 100%;
 `;
 
 export const Card = styled.div`
@@ -52,7 +52,13 @@ export const Card = styled.div`
   border-radius: 10px;
   padding: 16px;
   margin: 16px 0;
+  width: 100%;
+`;
 
+export const CardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const CardTitle = styled.div`
@@ -73,8 +79,6 @@ export const Percentage = styled.div`
   color: #5a51ff;
 `;
 
-
-
 export const EmojiContainer = styled.div`
   display: flex;
   width: 100%;
@@ -82,24 +86,28 @@ export const EmojiContainer = styled.div`
   align-items: end;
 `;
 
-export const Arrow = styled.img`
-width: 8px;
-height: 14px;
-
-`;
-
-export const CardHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 export const Emoji = styled.img`
 
+`;
+
+export const Arrow = styled.img`
+  width: 8px;
+  height: 14px;
 `;
 
 export const Message = styled.div`
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
+`;
+
+export const ImageCard = styled.div`
+  margin: 16px 0;
+  width: 100%;
+  cursor: pointer;
+`;
+
+export const CardImage = styled.img`
+  width: 100%;
+  border-radius: 10px;
 `;

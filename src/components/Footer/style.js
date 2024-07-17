@@ -11,7 +11,7 @@ export const FooterContainer = styled.div`
   bottom: 0;
   z-index: 10;
   font-family: 'pretendard';
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #f9f9f9;
 `;
 
 export const NavItem = styled.div`
