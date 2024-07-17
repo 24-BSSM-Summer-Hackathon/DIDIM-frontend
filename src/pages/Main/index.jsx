@@ -1,23 +1,29 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import * as s from './style';
+import happy from '../../assets/state/good.png'
+import soso from '../../assets/state/soso.png'
+import bad from '../../assets/state/bad.png'
 
 
 const Main = () => {
+  const userName = "강민지"
+  const registerName = "강시우"
   return (
     <s.Container>
       <s.Header>
-        <s.Logo />
+                <s.Logo />
+                <s.LogoText>DIDIM</s.LogoText>
+            </s.Header>
         <s.UserInfo>
         </s.UserInfo>
-      </s.Header>
       <s.Content>
-          <s.Greeting>👋🏻 강민지님</s.Greeting>
+          <s.Greeting>👋🏻 {userName}님</s.Greeting>
         <s.Card>
           <s.CardTitle>2024 7월 17일 수요일</s.CardTitle>
-          <s.CardText>강시우님의 스트레스 지수</s.CardText>
+          <s.CardText>{registerName}님의 스트레스 지수</s.CardText>
           <s.Percentage>12%</s.Percentage>
-          <s.Emoji>😊</s.Emoji>
+          <s.Emoji src={happy}/>
         </s.Card>
         <s.Message>노후 건강, 잊지말고 챙겨야죠! 😊</s.Message>
         <s.Card>

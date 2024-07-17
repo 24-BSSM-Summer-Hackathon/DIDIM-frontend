@@ -1,25 +1,36 @@
-import styled from 'styled-components';
-import LogoImage from '../../components/Footer';
+import styled from "styled-components";
+import LogoImage from "../../assets/Logo";
+
+export const MainLayout = styled.div `
+  width: 100vw;
+  height: 100vh;
+`
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: #F9F9F9;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 0 24px;
 `;
 
 export const Header = styled.header`
   display: flex;
   align-items: center;
   padding: 16px;
-  background-color: #FFF;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 `;
 
 export const Logo = styled(LogoImage)`
-  width: 40px;
-  height: 40px;
-  margin-right: 16px;
+  width: 25.06px;
+  height: 23.53px;
+  margin-right: 5px;
+`;
+
+export const LogoText = styled.p`
+  color: #5a51ff;
+  font-size: 17px;
+  font-weight: 600;
 `;
 
 export const UserInfo = styled.div`
@@ -37,7 +48,7 @@ export const Content = styled.main`
 `;
 
 export const Card = styled.div`
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 10px;
   padding: 16px;
   margin-bottom: 16px;
@@ -59,11 +70,11 @@ export const CardText = styled.div`
 export const Percentage = styled.div`
   font-size: 32px;
   font-weight: 700;
-  color: #5A51FF;
+  color: #5a51ff;
 `;
 
-export const Emoji = styled.div`
-  font-size: 32px;
+export const Emoji = styled.img`
+  
 `;
 
 export const Message = styled.div`
