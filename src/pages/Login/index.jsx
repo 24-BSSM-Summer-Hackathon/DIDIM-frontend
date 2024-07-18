@@ -1,11 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-
 import * as s from "./style";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/main');
+  };
+
   return (
     <div>
       <Header title="로그인" />
@@ -24,7 +30,7 @@ const Login = () => {
           <Input placeholder="비밀번호를 입력하세요." type="password" />
         </s.InputContainer>
         <s.ButtonContainer>
-          <Button text="로그인"></Button>
+          <Button text="로그인" onClick={handleLoginClick}></Button>
           <s.HelperTextContainer>
             <s.HelperText>비밀번호찾기</s.HelperText>
             <s.HelperText>아이디찾기</s.HelperText>
