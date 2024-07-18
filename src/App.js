@@ -10,14 +10,15 @@ import Main from './pages/Main';
 import MyPage from './pages/MyPage';
 import Footprint from './pages/Footprint';
 import Manage from './pages/Manage';
-import Footer from './components/Footer'; // Footer import 추가
+import Footer from './components/Footer';
+import Signup from './pages/signup'
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <AnimatedRoutes />
-        <Footer /> {/* 모든 페이지에서 Footer 렌더링 */}
+        <Footer /> 
       </div>
     </BrowserRouter>
   );
@@ -32,6 +33,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<Randing />} />
           <Route path="/start" element={<Start />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/Serial" element={<Serial />} />
           <Route path="/main" element={<Main />} />
           <Route path="/mypage" element={<MyPage />} />
