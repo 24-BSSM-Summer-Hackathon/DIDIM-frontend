@@ -12,10 +12,11 @@ import Footprint from './pages/Footprint';
 import Manage from './pages/Manage';
 import Footer from './components/Footer';
 import Signup from './pages/signup'
+import Test from './pages/Test';
 
 function App() {
   const location = useLocation();
-  const noFooterPaths = ['/', '/start', '/login', '/signup','/serial'];
+  const noFooterPaths = ['/', '/start', '/login', '/signup', '/test', '/serial'];
 
   return (
     <div>
@@ -40,6 +41,7 @@ function AnimatedRoutes() {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/footprint" element={<Footprint />} />
           <Route path="/manage" element={<Manage />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
