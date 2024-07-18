@@ -98,9 +98,9 @@ export const Arrow = styled.img`
 `;
 
 export const Message = styled.div`
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
-  margin: 20px 0 0px 0;
+  margin: 20px 0 0 0;
 `;
 
 export const ImageCard = styled.div`

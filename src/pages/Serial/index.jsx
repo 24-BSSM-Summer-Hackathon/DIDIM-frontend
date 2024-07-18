@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as s from "./style";
 import Button from '../../components/Button';
 
@@ -7,6 +8,7 @@ const Serial = () => {
   const [inputFocused, setInputFocused] = useState(false);
   const inputRefs = useRef([]);
   const [keyboardHeight, setKeyboardHeight] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +34,10 @@ const Serial = () => {
     }
   };
 
+  const handleRegisterClick = () => {
+    navigate('/main');
+  };
+
   return (
     <s.SerialContainer>
       <s.TextContainer>
@@ -52,7 +58,7 @@ const Serial = () => {
       </s.InputContainer>
       <s.Spacer inputFocused={inputFocused} keyboardHeight={keyboardHeight} />
       <s.ButtonWrapper inputFocused={inputFocused} keyboardHeight={keyboardHeight}>
-        <Button text="등록"></Button>
+        <Button text="등록" onClick={handleRegisterClick}></Button>
       </s.ButtonWrapper>
     </s.SerialContainer>
   );

@@ -15,7 +15,7 @@ import Signup from './pages/signup'
 
 function App() {
   const location = useLocation();
-  const noFooterPaths = ['/', '/start', '/login', '/signup'];
+  const noFooterPaths = ['/', '/start', '/login', '/signup','/serial'];
 
   return (
     <div>

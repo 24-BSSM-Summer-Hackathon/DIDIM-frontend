@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLoginClick = () => {
-    navigate('/main');
+    navigate('/serial');
   };
 
   return (
