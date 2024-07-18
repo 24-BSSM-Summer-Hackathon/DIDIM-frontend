@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import * as s from './style';
 import happy from '../../assets/state/good.png';
-import soso from '../../assets/state/soso.png';
-import bad from '../../assets/state/bad.png';
 import arrow from '../../assets/arrow.svg';
 import frame1 from '../../assets/Frame 7293.png';
 import frame2 from '../../assets/Frame 7294.png';
@@ -15,8 +13,12 @@ const Main = () => {
   const registerName = "강시우";
   const navigate = useNavigate();
 
-  const handleCardClick = (path) => {
-    navigate(path);
+  const handleCardClick = (url) => {
+    if (url.startsWith('http')) {
+      window.open(url, '_blank');
+    } else {
+      navigate(url);
+    }
   };
 
   return (
@@ -45,7 +47,7 @@ const Main = () => {
           <s.ImageCard onClick={() => handleCardClick('/Test')}>
             <s.CardImage src={frame1} />
           </s.ImageCard>
-          <s.ImageCard onClick={() => handleCardClick('/page2')}>
+          <s.ImageCard onClick={() => handleCardClick('https://www.gov.kr/portal/rcvfvrSvc/dtlEx/452000000164?administOrgCd=ALL')}>
             <s.CardImage src={frame2} />
           </s.ImageCard>
           <s.ImageCard onClick={() => handleCardClick('/page3')}>
