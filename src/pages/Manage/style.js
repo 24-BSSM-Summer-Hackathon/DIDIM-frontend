@@ -5,6 +5,7 @@ export const ManageLayout = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'pretandard';
 `;
 
 export const Container = styled.div`
@@ -18,18 +19,20 @@ export const Container = styled.div`
   box-sizing: border-box;
 `;
 
+
 export const Header = styled.header`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 16px 0;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 11px 24px;
+isolation: isolate;
+width: 100%;
+max-width: 375px;
+height: 40px;
 `;
 
 export const HeaderTitle = styled.h1`
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
 `;
@@ -40,8 +43,7 @@ export const StatusCard = styled.div`
   background: #ffffff;
   border-radius: 10px;
   padding: 16px;
-  margin: 16px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 14px 0;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -49,15 +51,16 @@ export const StatusCard = styled.div`
 `;
 
 export const StatusDot = styled.div`
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background-color: ${props => props.isOnline ? '#4caf50' : '#f44336'};
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 10px;
 `;
 
 export const StatusText = styled.div`
   font-size: 16px;
+  font-weight: 600;
   color: ${props => props.isOnline ? '#4caf50' : '#f44336'};
 `;
 
@@ -67,8 +70,7 @@ export const BigCard = styled.div`
   background: #ffffff;
   border-radius: 10px;
   padding: 16px;
-  margin: 16px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin:0  16px 0 ;
   box-sizing: border-box;
 `;
 
@@ -91,7 +93,7 @@ export const CardText = styled.div`
 `;
 
 export const Percentage = styled.div`
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   color: #5a51ff;
 `;
@@ -104,8 +106,7 @@ export const EmojiContainer = styled.div`
 `;
 
 export const Emoji = styled.img`
-  width: 32px;
-  height: 32px;
+
 `;
 
 export const CardRow = styled.div`
@@ -119,12 +120,13 @@ export const CardRow = styled.div`
 export const MiniCard = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #fff;
   border-radius: 10px;
-  padding: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1px;
   width: 48%;
+height: 110px;
+margin-top: 10px;
+
 `;
 
 export const Icon = styled.img`

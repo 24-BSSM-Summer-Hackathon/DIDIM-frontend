@@ -49,7 +49,7 @@ const Manage = () => {
             <s.Icon src={heartIcon} alt="심박수" />
             <s.Info>
               <s.CardTitle>심박수</s.CardTitle>
-              <s.Value>100<s.Unit>mmhg</s.Unit></s.Value>
+              <s.Value>100<s.Unit>bpm</s.Unit></s.Value>
             </s.Info>
           </s.MiniCard>
         </s.CardRow>

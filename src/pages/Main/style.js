@@ -76,7 +76,7 @@ export const CardText = styled.div`
 `;
 
 export const Percentage = styled.div`
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   color: #5a51ff;
 `;
