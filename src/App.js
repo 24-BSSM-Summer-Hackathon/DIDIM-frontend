@@ -9,6 +9,7 @@ import Serial from './pages/Serial';
 import Main from './pages/Main'
 import MyPage from './pages/MyPage';
 import Footprint from './pages/Footprint';
+import Manage from './pages/\bManage';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function AnimatedRoutes() {
           <Route path="/main" element={<Main />} />
           <Route path="/mypage" element={<MyPage/>} />
           <Route path="/footprint" element={<Footprint/>} />
+          <Route path="/manage" element={<Manage/>} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
