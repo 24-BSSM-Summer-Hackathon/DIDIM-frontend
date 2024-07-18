@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import * as s from './style';
 import happy from '../../assets/state/good.png';
@@ -12,9 +13,10 @@ import frame3 from '../../assets/Frame 7296.png';
 const Main = () => {
   const userName = "강민지";
   const registerName = "강시우";
-  
-  const handleCardClick = (url) => {
-    window.open(url, '_blank');
+  const navigate = useNavigate();
+
+  const handleCardClick = (path) => {
+    navigate(path);
   };
 
   return (
@@ -40,13 +42,13 @@ const Main = () => {
             </s.EmojiContainer>
           </s.Card>
           <s.Message>노후 건강, 잊지말고 챙겨야죠! 😊</s.Message>
-          <s.ImageCard onClick={() => handleCardClick('https://example.com/1')}>
+          <s.ImageCard onClick={() => handleCardClick('/Test')}>
             <s.CardImage src={frame1} />
           </s.ImageCard>
-          <s.ImageCard onClick={() => handleCardClick('https://example.com/2')}>
+          <s.ImageCard onClick={() => handleCardClick('/page2')}>
             <s.CardImage src={frame2} />
           </s.ImageCard>
-          <s.ImageCard onClick={() => handleCardClick('https://example.com/3')}>
+          <s.ImageCard onClick={() => handleCardClick('/page3')}>
             <s.CardImage src={frame3} />
           </s.ImageCard>
         </s.Content>

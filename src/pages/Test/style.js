@@ -28,13 +28,18 @@ export const QuestionContainer = styled.div`
   margin-bottom: 20px;
   width: 100%;
   max-width: 400px;
-  text-align: center; /* Add this line for center alignment */
 `;
 
 export const Question = styled.p`
   font-size: 16px;
   color: #333;
   margin-bottom: 8px;
+`;
+
+export const AnswerButtons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 `;
 
 export const AnswerButton = styled.button`
@@ -46,8 +51,6 @@ export const AnswerButton = styled.button`
   font-size: 16px;
   cursor: pointer;
   margin: 5px;
-  display: inline-block; /* Add this line for inline display */
-  text-align: center;
 
   &:hover {
     background-color: ${props => (props.selected ? '#4a41d4' : '#eae8ff')};
@@ -58,6 +61,12 @@ export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
 `;
 
 export const CloseButton = styled.button`
@@ -80,12 +89,7 @@ export const NavButtons = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 400px;
-  position: fixed;
-  bottom: 20px; /* Adjust the value as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 20px;
-  box-sizing: border-box;
+  margin-top: 20px;
 `;
 
 export const NavButton = styled.button`
@@ -106,3 +110,18 @@ export const NavButton = styled.button`
     cursor: not-allowed;
   }
 `;
+
+export const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    borderRadius: '10px',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+    padding: '20px',
+    border: 'none',
+  },
+};
