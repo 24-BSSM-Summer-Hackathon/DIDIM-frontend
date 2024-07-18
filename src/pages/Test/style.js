@@ -28,6 +28,7 @@ export const QuestionContainer = styled.div`
   margin-bottom: 20px;
   width: 100%;
   max-width: 400px;
+  text-align: center; /* Add this line for center alignment */
 `;
 
 export const Question = styled.p`
@@ -45,6 +46,8 @@ export const AnswerButton = styled.button`
   font-size: 16px;
   cursor: pointer;
   margin: 5px;
+  display: inline-block; /* Add this line for inline display */
+  text-align: center;
 
   &:hover {
     background-color: ${props => (props.selected ? '#4a41d4' : '#eae8ff')};
@@ -77,7 +80,12 @@ export const NavButtons = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 400px;
-  margin-top: 20px;
+  position: fixed;
+  bottom: 20px; /* Adjust the value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  box-sizing: border-box;
 `;
 
 export const NavButton = styled.button`
