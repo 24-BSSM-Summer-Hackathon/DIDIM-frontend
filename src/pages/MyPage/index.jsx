@@ -1,12 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import * as s from './style';
-import {DefaultProfile, MyDatasLine} from "./style";
+import { DefaultProfile, MyDatasLine } from "./style";
 
 const MyPage = () => {
-    const userName = "강민지"
-    const serialCode = "ABCDE"
-    const userID = "rkdalswl718"
+    const navigate = useNavigate();
+    const userName = "강민지";
+    const serialCode = "ABCDE";
+    const userID = "rkdalswl718";
+
+    const handleLogoutClick = () => {
+        navigate('/');
+    };
 
     return (
         <s.Container>
@@ -20,14 +26,14 @@ const MyPage = () => {
             <s.MyDatas>
                 <s.MyDatasCenterBox>
                     <s.MyDatasText>시리얼 코드: {serialCode}</s.MyDatasText>
-                    <s.MyDatasLine/>
+                    <s.MyDatasLine />
                     <s.MyDatasText>아이디: {userID}</s.MyDatasText>
                 </s.MyDatasCenterBox>
             </s.MyDatas>
-            <s.StyledButton>로그아웃</s.StyledButton>
-            <Footer/>
+            <s.StyledButton onClick={handleLogoutClick}>로그아웃</s.StyledButton>
+            <Footer />
         </s.Container>
-    )
+    );
 }
 
-export default MyPage
+export default MyPage;

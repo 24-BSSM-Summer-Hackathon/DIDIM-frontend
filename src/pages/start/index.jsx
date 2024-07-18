@@ -10,7 +10,7 @@ const Start = () => {
   };
 
   const handleSignUpClick = () => {
-    navigate('/signup'); // 회원가입 페이지의 경로로 설정하세요.
+    navigate('/signup'); 
   };
 
   return (
@@ -24,7 +24,7 @@ const Start = () => {
         </s.TextContainer>
         <s.ButtonContainer>
           <s.LoginButton onClick={handleLoginClick}>로그인</s.LoginButton>
-          <s.ButtonInfo onClick={handleSignUpClick}>회원가입하러가기</s.ButtonInfo>
+          <s.ButtonInfo onClick={handleSignUpClick}>회원가입 하러가기</s.ButtonInfo>
         </s.ButtonContainer>
       </s.StrartLayout>
     </s.StartBackground>

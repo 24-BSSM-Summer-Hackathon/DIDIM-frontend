@@ -14,13 +14,14 @@ import Footer from './components/Footer';
 import Signup from './pages/signup'
 
 function App() {
+  const location = useLocation();
+  const noFooterPaths = ['/', '/start', '/login', '/signup'];
+
   return (
-    <BrowserRouter>
-      <div>
-        <AnimatedRoutes />
-        <Footer /> 
-      </div>
-    </BrowserRouter>
+    <div>
+      <AnimatedRoutes />
+      {!noFooterPaths.includes(location.pathname) && <Footer />}
+    </div>
   );
 }
 
@@ -32,9 +33,9 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<Randing />} />
           <Route path="/start" element={<Start />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/Serial" element={<Serial />} />
+          <Route path="/serial" element={<Serial />} />
           <Route path="/main" element={<Main />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/footprint" element={<Footprint />} />
@@ -45,4 +46,12 @@ function AnimatedRoutes() {
   );
 }
 
-export default App;
+function AppWithRouter() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
+
+export default AppWithRouter;
