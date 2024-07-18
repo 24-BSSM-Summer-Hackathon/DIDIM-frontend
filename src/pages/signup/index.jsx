@@ -1,11 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-
 import * as s from "./style";
 
-const Login = () => {
+const SignUp = () => {
+  const navigate = useNavigate();
+
+  const handleSignUpClick = () => {
+    navigate('/login'); // 회원가입 후 이동할 페이지의 경로를 설정하세요.
+  };
+
   return (
     <div>
       <Header title="회원가입" />
@@ -25,11 +31,11 @@ const Login = () => {
           <Input placeholder="비밀번호를 입력하세요." type="password" />
         </s.InputContainer>
         <s.ButtonContainer>
-          <Button text="회원가입"></Button>
+          <Button text="회원가입" onClick={handleSignUpClick}></Button>
         </s.ButtonContainer>
       </s.LoginContainer>
     </div>
   );
 };
 
-export default Login;
+export default SignUp;
