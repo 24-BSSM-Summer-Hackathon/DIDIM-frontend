@@ -10,11 +10,15 @@ import Main from './pages/Main';
 import MyPage from './pages/MyPage';
 import Footprint from './pages/Footprint';
 import Manage from './pages/Manage';
+import Footer from './components/Footer'; // Footer import 추가
 
 function App() {
   return (
     <BrowserRouter>
-      <AnimatedRoutes />
+      <div>
+        <AnimatedRoutes />
+        <Footer /> {/* 모든 페이지에서 Footer 렌더링 */}
+      </div>
     </BrowserRouter>
   );
 }

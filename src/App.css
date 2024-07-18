@@ -10,7 +10,6 @@
   font-style: normal;
 }
 
-
 .App {
   text-align: center;
 }
@@ -22,7 +21,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 60s linear; /* 애니메이션 속도를 느리게 */
   }
 }
 
@@ -53,12 +52,12 @@
 /* App.css */
 .fade-enter {
   opacity: 0;
-  transform: scale(1.1);
+  transform: scale(1.02); /* 애니메이션 강도 최소화 */
 }
 .fade-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 150ms, transform 150ms; /* 애니메이션 속도 최소화 */
 }
 .fade-exit {
   opacity: 1;
@@ -66,6 +65,6 @@
 }
 .fade-exit-active {
   opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
+  transform: scale(0.98); /* 애니메이션 강도 최소화 */
+  transition: opacity 150ms, transform 150ms; /* 애니메이션 속도 최소화 */
 }
