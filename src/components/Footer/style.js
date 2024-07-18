@@ -19,6 +19,11 @@ export const NavItem = styled.div`
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+
+  svg {
+    fill: ${props => (props.active ? '#5A51FF' : '#D9D9D9')};
+  }
+
   ${({ active }) => active && `
     color: #5A51FF;
   `}

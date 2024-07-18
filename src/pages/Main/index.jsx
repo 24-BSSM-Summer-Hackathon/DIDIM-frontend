@@ -25,7 +25,7 @@ const Main = () => {
           <s.LogoText>DIDIM</s.LogoText>
         </s.Header>
         <s.Content>
-          <s.Greeting>👋🏻 {userName}님</s.Greeting>
+          <s.Greeting>👋🏻 {userName}님, 환영합니다.</s.Greeting>
           <s.Card>
             <s.CardHeader>
               <div>
