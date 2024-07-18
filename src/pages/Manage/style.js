@@ -5,7 +5,7 @@ export const ManageLayout = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'pretandard';
+  font-family: 'pretendard';
 `;
 
 export const Container = styled.div`
@@ -19,16 +19,15 @@ export const Container = styled.div`
   box-sizing: border-box;
 `;
 
-
 export const Header = styled.header`
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 11px 24px;
-isolation: isolate;
-width: 100%;
-max-width: 375px;
-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 24px;
+  isolation: isolate;
+  width: 100%;
+  max-width: 375px;
+  height: 40px;
 `;
 
 export const HeaderTitle = styled.h1`
@@ -70,7 +69,7 @@ export const BigCard = styled.div`
   background: #ffffff;
   border-radius: 10px;
   padding: 16px;
-  margin:0  16px 0 ;
+  margin: 0 0 14px 0;
   box-sizing: border-box;
 `;
 
@@ -87,7 +86,7 @@ export const CardTitle = styled.div`
 `;
 
 export const CardText = styled.div`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
 `;
@@ -120,25 +119,38 @@ export const CardRow = styled.div`
 export const MiniCard = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   border-radius: 10px;
-  padding: 1px;
+  padding: 16px;
   width: 48%;
-height: 110px;
-margin-top: 10px;
+  height: 110px;
+  box-sizing: border-box;
+`;
+export const CardTitleMini = styled.div`
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 24px;
+`;
 
+export const MiniCardContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 `;
 
 export const Icon = styled.img`
-  width: 64px;
-  height: 64px;
-  margin-bottom: 16px;
+  width: 48px;
+  height: 48px;
+  margin:0 10px 30px 0;
 `;
 
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 export const Value = styled.div`

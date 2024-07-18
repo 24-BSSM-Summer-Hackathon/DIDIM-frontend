@@ -70,7 +70,7 @@ export const CardTitle = styled.div`
 `;
 
 export const CardText = styled.div`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
 `;

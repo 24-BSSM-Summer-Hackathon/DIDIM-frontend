@@ -39,18 +39,22 @@ const Manage = () => {
         </s.BigCard>
         <s.CardRow>
           <s.MiniCard>
-            <s.Icon src={brainIcon} alt="혈압" />
-            <s.Info>
-              <s.CardTitle>혈압</s.CardTitle>
-              <s.Value>120<s.Unit>mmhg</s.Unit></s.Value>
-            </s.Info>
+            <s.MiniCardContent>
+              <s.Info>
+                <s.CardTitleMini>혈압</s.CardTitleMini>
+                <s.Value>120<s.Unit>mmhg</s.Unit></s.Value>
+              </s.Info>
+              <s.Icon src={brainIcon} alt="혈압" />
+            </s.MiniCardContent>
           </s.MiniCard>
           <s.MiniCard>
-            <s.Icon src={heartIcon} alt="심박수" />
-            <s.Info>
-              <s.CardTitle>심박수</s.CardTitle>
-              <s.Value>100<s.Unit>bpm</s.Unit></s.Value>
-            </s.Info>
+            <s.MiniCardContent>
+              <s.Info>
+                <s.CardTitleMini>심박수</s.CardTitleMini>
+                <s.Value>100<s.Unit>bpm</s.Unit></s.Value>
+              </s.Info>
+              <s.Icon src={heartIcon} alt="심박수" />
+            </s.MiniCardContent>
           </s.MiniCard>
         </s.CardRow>
         <Footer />
